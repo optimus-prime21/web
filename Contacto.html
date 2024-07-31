@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IECA</title>
+	<style>
+		.top-bar {
+			background-color: #0d1b77;
+			padding: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.logo {
+			margin-right: 20px;
+			width: 90px;
+            height: 90px;
+		}
+        .body{
+            background-color: #e6e6ec;
+            text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+        }
+		.form{
+			padding: 50px 55px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			border-radius: 20px;
+			text-align: center;
+			width: 340px;
+		}
+		.input-group{
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			padding: 17px 25px;
+			border-radius: 25px;
+			margin-bottom: 20px;
+			background-color: #e6e6ec;
+			border: 2px solid #4a5077;
+			color: #0d1b77;
+			outline: none;
+		}
+		.h2{
+			color: #0a155f;
+			font-size: 35px;
+		}
+		.label{
+			color: #0a155f;
+			font-size: 15px;
+			font-weight: 600;
+			margin-bottom: 15px;
+		}
+		.input, textarea{
+			padding: 17px 25px;
+			border-radius: 25px;
+			margin-bottom: 20px;
+			background-color: #e6e6ec;
+			border: 2px solid #4a5077;
+			color: #0d1b77;
+			outline: none;
+		}
+		.input::placeholder, textarea::placeholder{
+			color: #b5cab6;
+		}
+		.form-txt{
+			margin-bottom: 30px;
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+		}
+		.form-txt a{
+			font-size: 14px;
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.btn{
+			font-size: 16px;
+			color: #FFFFFF;
+			border: 0;
+			border-radius: 25px;
+			background-color: #0a155f;
+			box-shadow: 0 0 20 rgba(10, 22, 148, 0.445);
+			cursor: pointer;
+		}
+        .footer{
+            background-color: #4a5077;
+            padding: 50px;
+        }
+		@media(max-width:991px){
+			.body{
+				padding: 30px;
+			}
+			.form{
+				padding: 50px 30px;
+				width: 100%;
+			}
+			.input{
+				padding: 15px;
+			}
+		}
+	</style>
+</head>
+<div>
+<header>
+	<div class="top-bar">
+		<img src="IECA.jpeg" alt="IECA" class="logo">
+		<a href="index.html"style="color: lightgray;">Página principal/</a>
+        <a href="Nosotros.html"style="color: lightgray;">Nosotros/</a>
+		<a href="Catálogo.html"style="color: lightgray;">Catálogo/</a>
+        <a href="Labor_social.html"style="color: lightgray;">Labor social/</a>
+		<a href="Inicio_sesión.html"style="color: lightgray;">Inicio de sesión/</a>
+	</div>
+</header>
+<body class="body">
+
+
+	<form action="https://formsubmit.co/natebarrera07@gmail.com" method="POST" >
+		<h2>Contacto</h2>
+		<div class="input-group">
+
+			<label for="name">Nombre</label>
+			<input type="text" name="name" id="name" placeholder="Nombre">
+
+			<label for="phone">Telefono</label>
+			<input type="tel" name="phone" placeholder="Telefono">
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="Email">
+
+			<label for="message">Mensaje</label>
+			<textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+			<div class="form-txt">
+				<a href="#">Politica de privacidad</a>
+				<a href="#">Terminos y condiciones</a>
+			</div>
+
+			<input class="btn" type="submit" value="Enviar">
+
+			<input type="hidden" name="_next" value="http://127.0.0.1:5500/Contacto.html">
+			<input type="hidden" name="_captcha" value="false">
+
+		</div>
+
+	</form>
+</body>
+<footer class="footer">
+    <p>© 2024 IECA</p>
+    
+</footer>
+</div>
+</html>
